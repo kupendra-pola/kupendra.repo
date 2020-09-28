@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+    <script src="jsFile.js"></script>
+    <script src="dataService.js"></script>
+    <!-- <script src="service.js"></script> -->
+</head>
+<style type="text/css">
+.well{
+    margin:0px;
+}
+</style>
+<body ng-app="app">
+    <div class="row">
+<div class="col-sm-12 well">
+    header | <a href="#/">HOME</a>
+</div>    
+</div>
+<div class="row" >
+<div class="col-sm-3 well" style="height:500px">
+    <ul>
+        <li>
+            <a href="#/calc">calculater</a>
+        </li>
+        <li>
+            <a href="#/">test link1</a>
+        </li>
+        <li>
+            <a href="#/">test link2</a>
+        </li>
+        <li>
+            <a href="#/">test link3</a>
+        </li>
+    </ul>
+    
+</div>    
+<div class="col-sm-9 well"  style="height:500px">
+    <div ng-view></div>   
+</div>
+</div >
+    
+</body>
+
+</html>
